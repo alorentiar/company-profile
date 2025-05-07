@@ -1,4 +1,25 @@
 <section class="section">
-    <h1>Welcome to MyCompany</h1>
-    <p>Your trusted partner in business solutions.</p>
-  </section>
+    <h1>Vand's Kost</h1>
+    <p>Your trusted partner in Building Equipment.</p>
+
+    <div class="home-container">
+      <!-- Carousel -->
+      <div class="carousel">
+        <img [src]="images[currentIndex]" alt="carousel image" class="carousel-image" />
+    
+        <div class="carousel-controls">
+          <button (click)="prev()">‹</button>
+          <button (click)="next()">›</button>
+        </div>
+      </div>
+    
+      <!-- Video -->
+      <div class="video-section">
+        <video width="100%" controls>
+          <source src="assets/video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+    
+</section>

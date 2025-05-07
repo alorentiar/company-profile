@@ -1,0 +1,146 @@
+:root {
+    --primary: #0066cc;
+    --secondary: #f9f9f9;
+    --dark: #333;
+    --accent: #e94e77;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    color: var(--dark);
+    background-color: white;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  /* HERO SECTION */
+  .hero {
+    background: linear-gradient(to right, #0066cc, #004b99);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .hero h1 span {
+    color: #ffdd57;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+  }
+  
+  /* SERVICES SECTION */
+  .services {
+    background-color: var(--secondary);
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .services h2 {
+    color: var(--primary);
+    margin-bottom: 40px;
+  }
+  
+  .service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+  
+  .card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    width: 100%;
+    max-width: 340px;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card h3 {
+    color: var(--accent);
+    margin-bottom: 15px;
+  }
+  
+  .card p {
+    color: #555;
+  }
+  
+  /* WHY US */
+  .why-us {
+    padding: 60px 20px;
+  }
+  
+  .why-us h2 {
+    color: var(--primary);
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  
+  .why-us ul {
+    list-style: none;
+    font-size: 18px;
+    max-width: 700px;
+    margin: auto;
+    padding-left: 0;
+  }
+  
+  .why-us li {
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+    color: #444;
+  }
+  
+  /* QUOTE SECTION */
+  .quote {
+    background: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 1.8;
+    border-top: 5px solid #003b7a;
+  }
+  
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2rem;
+    }
+  
+    .service-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      max-width: 100%;
+    }
+  
+    .why-us ul {
+      padding-left: 20px;
+    }
+  }
+  
