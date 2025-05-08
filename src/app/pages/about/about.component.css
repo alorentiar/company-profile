@@ -27,21 +27,25 @@
     text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.8);
   }
   
-  .jumbotron-text h2 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
+  .org-structure-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
   }
   
-  .jumbotron-text p {
-    font-size: 1rem;
-    max-width: 600px;
-    margin: 0 auto;
+  .org-logo img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
   }
   
   .org-structure {
     text-align: left;
     max-width: 600px;
-    margin: 0 auto;
   }
   
   .org-structure h3 {
@@ -60,4 +64,16 @@
     font-size: 1rem;
     border-bottom: 1px solid #eee;
   }
-   
+  
+  @media (max-width: 768px) {
+    .org-structure-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .org-structure {
+      text-align: center;
+    }
+  }
+  
