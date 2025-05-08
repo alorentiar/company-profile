@@ -1,0 +1,63 @@
+.about-section {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .jumbotron {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    margin-bottom: 2rem;
+  }
+  
+  .jumbotron-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    filter: brightness(0.6);
+  }
+  
+  .jumbotron-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.8);
+  }
+  
+  .jumbotron-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .jumbotron-text p {
+    font-size: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .org-structure {
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .org-structure h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #1976d2;
+  }
+  
+  .org-structure ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .org-structure li {
+    padding: 0.5rem 0;
+    font-size: 1rem;
+    border-bottom: 1px solid #eee;
+  }
+   

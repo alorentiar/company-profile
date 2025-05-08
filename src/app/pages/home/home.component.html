@@ -1,25 +1,26 @@
 <section class="section">
-    <h1>Vand's Kost</h1>
-    <p>Your trusted partner in Building Equipment.</p>
+  <h1>Vand's Kost</h1>
+  <p>Your trusted partner in Building Equipment.</p>
 
-    <div class="home-container">
-      <!-- Carousel -->
+  <div class="home-container">
+    <!-- Carousel -->
+    <div class="carousel-wrapper">
+      <button class="carousel-btn left" (click)="prev()">‹</button>
       <div class="carousel">
         <img [src]="images[currentIndex]" alt="carousel image" class="carousel-image" />
-    
-        <div class="carousel-controls">
-          <button (click)="prev()">‹</button>
-          <button (click)="next()">›</button>
-        </div>
       </div>
-    
-      <!-- Video -->
-      <div class="video-section">
-        <video width="100%" controls>
+      <button class="carousel-btn right" (click)="next()">›</button>
+    </div>
+
+    <!-- Video -->
+    <div class="video-section">
+      <div class="video-wrapper">
+        <video controls>
           <source src="assets/video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
+      <p class="video-caption">Explore our modern facilities and trusted services through this short introduction video.</p>
     </div>
-    
+  </div>
 </section>
